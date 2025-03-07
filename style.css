@@ -1,0 +1,136 @@
+* { margin: 0; padding: 0; font-family: Roboto; }
+body {
+	background: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    	background-size: auto;
+  	background-size: 100%;
+}
+h1 {
+	font-family: "Playfair Display";
+	text-align: center;
+	color: #555;
+	padding-top: 2rem;
+}
+.container {
+	background: rgba(999,999,999,0.8);
+	width: 85%;
+	display: flex;
+  	flex-direction: column;
+	margin: 2rem auto;
+	height: 560px;
+	border-radius: 20px;
+}
+.stand {
+	color: #535353;
+	margin: 1rem auto;
+	width: 90%;
+	height: 85%;
+	overflow: auto;
+  	scrollbar-width: thin;
+}
+tr:first-child {
+	font-weight: bold;
+}
+
+.firstOne {
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+td {
+	padding: 0.4rem 0;
+}
+.firstOne td {
+	border-bottom: 1px solid #535353;
+	padding-bottom: 5px;
+}
+table {
+	width: 100%;
+}
+.config {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 15%;
+}
+button {
+	width: 200px;
+	background: #ccc;
+	border: 1px solid #2b2b2b;
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 0.5rem;
+	font-variant: small-caps;
+	transition: all 0.5s ease-out;
+}
+button:hover {
+	background: #2b2b2b;
+	border: 1px solid #ccc;
+	color: white;
+}
+.bookForm {
+	width: 40%;
+	display: none;
+	position: fixed;
+	padding: 2rem;
+	border-radius: 20px;
+	background: #f7f7f7;
+	border: 1px solid #d7d7d7;
+	font-size: 0.9rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#close {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	cursor: pointer;
+}
+.bookForm p {
+	padding-bottom: 0.5rem;
+}
+label {
+	width: 100%;
+	display: block;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+form {
+	height: 85%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 8px;
+}
+input {
+	border-radius: 5px;
+	border: 1px solid #d7d7d7;
+	width: 100%;
+}
+input:focus {
+	outline: 1px solid #535353;
+}
+.add {
+	margin-top: 1rem;
+  	text-align: center;
+	grid-column: span 2 / span 2;
+}
+.bookForm button {
+	width: 150px;
+}
+td:last-child {
+	text-align: center;
+}
+.reading {
+	cursor: pointer;
+}
+#deleteBook {
+	width: 18px;
+	height: 18px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 5px;
+	border-radius: 100%;
+	cursor: pointer;
+	color: #4a4a4a;
+}

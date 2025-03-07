@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>The Magical Library</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>The Magical Library</h1>
+			<div class="stand">
+				<table>
+					<tr class="firstOne">
+						<td style="width: 60%;">Name</td>
+						<td>Author</td>
+						<td>Genre</td>
+						<td>Read</td>
+					</tr>
+				</table>
+			</div>
+			<div class="config">
+				<button id="addBook">Add a book!</button>
+			</div>
+		</div>
+		<div class="bookForm">
+			<div id="close">⨯</div>
+			<p>Fill the next fields:</p>
+			<form id="formulario">
+				<label for="title">Title</label>
+				<input name="title" id="title" type="text" required>
+				<label for="author">Author</label>
+				<input name="author" id="author" type="text" required>
+				<label for="genre">Genre</label>
+				<select name="genre" id="genre" required>
+					<option value="" disabled selected>Choose here</option>
+					<option value="Fantasy">Fantasy</option>
+					<option value="Mistery">Mistery</option>
+					<option value="War">War</option>
+					<option value="Thriller">Thriller</option>
+					<option value="Slice of Life">Slice of Life</option>
+				</select>
+				<label for="read">Did you read it?</label>
+				<select name="read" id="read" required>
+					<option value="" disabled selected>Choose here</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>
+				<div class="add"><button type="submit" id="addplease">Clic to add!</button></div>
+			</form>
+		</div>
+	</body>
+	<script src="javascript.js"></script>
+</html>
